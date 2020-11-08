@@ -1,0 +1,35 @@
+pipeline{
+  agent any
+  
+  stages{
+  
+    stage("Prepare"){
+       echo "TimeStamp: ${currentBuild.startTimeInMillis}"
+        echo "Prepare pipeline job....."
+    }
+    
+    stage("Build"){
+        echo "TimeStamp: ${currentBuild.startTimeInMillis}"
+        echo "Prepare pipeline job....."
+    }
+    
+    stage("Prepare"){
+        echo "TimeStamp: ${currentBuild.startTimeInMillis}"
+        echo "build pipeline job....."
+    }
+    
+    stage("Test"){
+        echo "TimeStamp: ${currentBuild.startTimeInMillis}"
+        echo "Test pipeline job....."
+    }
+     stage("Release"){
+        echo "TimeStamp: ${currentBuild.startTimeInMillis}"
+        echo "Release pipeline job....."
+    }
+    
+  
+  }
+
+
+
+}
