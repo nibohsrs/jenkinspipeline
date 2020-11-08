@@ -4,23 +4,31 @@ pipeline{
   stages{
   
     stage("Prepare"){
+        steps{
        echo "TimeStamp: ${currentBuild.startTimeInMillis}"
         echo "Prepare pipeline job....."
+      }
     }
     
     stage("Build"){
+    steps{
         echo "TimeStamp: ${currentBuild.startTimeInMillis}"
         echo "Prepare pipeline job....."
+        }
     }
     
     stage("Prepare"){
+    steps{
         echo "TimeStamp: ${currentBuild.startTimeInMillis}"
         echo "build pipeline job....."
+        }
     }
     
     stage("Test"){
+    steps{
         echo "TimeStamp: ${currentBuild.startTimeInMillis}"
         echo "Test pipeline job....."
+        }
     }
      stage("Release"){
         echo "TimeStamp: ${currentBuild.startTimeInMillis}"
