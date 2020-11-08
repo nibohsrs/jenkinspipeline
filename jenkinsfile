@@ -3,7 +3,7 @@ pipeline{
 
 	stages{
 		
-		stage("Prepare"){
+		stage("Preparing"){
 			steps{
 				echo "TimeStamp: ${currentBuild.startTimeInMillis}"
 				echo "Prepare pipeline job....."
